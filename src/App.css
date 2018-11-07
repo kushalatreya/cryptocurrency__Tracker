@@ -7,9 +7,6 @@ body {
     background-attachment: fixed;
 
 }
-.coins {
-    
-}
 
 .coin {
     display: flex;
@@ -18,8 +15,6 @@ body {
     background-color: aliceBlue;
     opacity: 0.8;
     padding: 10px;
-    
-  
 }
 
 .coin div{
@@ -30,5 +25,16 @@ body {
     border-right: 1px solid gray;
 }
 #heading-text{
-    color: tomato;
+    color: tomato
+}
+
+.search-input {
+    flex: 1;
+    border: solid 1px blue;
+    background-color: aliceblue;
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 2%;
+    margin: 20px 0;
 }
