@@ -11,7 +11,7 @@ const Coins = props => {
         <div key={coin.id} className="coin">
           <div>{coin.rank}</div>
           <div>{coin.name}</div>
-          <div>${Number(coin.price_usd).toFixed(7)}</div>
+          <div>${Number(coin.price_usd).toFixed(2)}</div>
           <div>{coin.symbol}</div>
         </div>
       );
@@ -52,7 +52,7 @@ class App extends Component {
   componentDidUpdate() {
     console.log(this.searchResult(this.state.searchKey));
   }
-  
+
   render() {
     const coins = this.state.coins;
     let key = this.state.searchKey;
